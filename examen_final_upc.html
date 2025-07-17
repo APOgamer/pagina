@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Final - Diseño de Experimentos UPC</title>
+  <link rel="stylesheet" href="examen_final_upc.css">
+</head>
+<body>
+  <header class="upc-header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" class="upc-logo">
+    <div>
+      <h1>UPC</h1>
+      <h2>Universidad Peruana de Ciencias Aplicadas</h2>
+    </div>
+  </header>
+  <main>
+    <section class="info">
+      <h3>Diseño de Experimentos de Ingeniería de Software (1ASI0732)</h3>
+      <p><strong>EXAMEN FINAL</strong> - 202510</p>
+      <p><strong>Sección:</strong> 4429</p>
+      <p><strong>Alumno:</strong> Adrian Enrique Jesus Palma</p>
+    </section>
+    <section class="pregunta">
+      <h2>Pregunta 1: Assumptions y Question Backlog</h2>
+      <h4>Assumptions:</h4>
+      <ol>
+        <li>Los profesionales de la salud voluntarios aumentarán su participación y disponibilidad si reciben retroalimentación sobre el impacto de sus consultas en la salud comunitaria rural.</li>
+        <li>Los centros comunitarios mejorarán su efectividad como facilitadores si cuentan con herramientas de seguimiento en tiempo real del estado de las consultas y pueden intervenir proactivamente en casos críticos.</li>
+        <li>Las familias rurales tendrán mayor adherencia al seguimiento médico si pueden acceder a un sistema de recordatorios automáticos para tratamientos preventivos y controles médicos basados en su historial de salud.</li>
+        <li>La calidad de las consultas virtuales mejorará significativamente si los profesionales pueden acceder a un sistema de triaje inteligente que priorice casos según urgencia y especialidad requerida.</li>
+      </ol>
+      <h4>Question Backlog:</h4>
+      <ol>
+        <li>¿Cómo podemos implementar un sistema de retroalimentación que muestre a los profesionales voluntarios el impacto de sus consultas en la mejora de la salud comunitaria?</li>
+        <li>¿Qué herramientas de monitoreo en tiempo real necesitan los centros comunitarios para identificar y gestionar proactivamente consultas que requieren intervención inmediata?</li>
+        <li>¿Cómo podemos desarrollar un sistema de recordatorios automáticos personalizados que mejore la adherencia de las familias rurales a los tratamientos preventivos?</li>
+        <li>¿Qué algoritmo de triaje inteligente puede optimizar la asignación de consultas según la urgencia médica y la especialidad del profesional disponible?</li>
+      </ol>
+    </section>
+    <section class="pregunta">
+      <h2>Pregunta 2: Experiment Cards</h2>
+      <div class="card">
+        <h4>Experiment Card 1</h4>
+        <p><strong>Question:</strong> ¿Cómo podemos implementar un sistema de retroalimentación que muestre a los profesionales voluntarios el impacto de sus consultas en la mejora de la salud comunitaria?</p>
+        <p><strong>Why:</strong> Los profesionales voluntarios necesitan motivación adicional para mantener su compromiso y mejorar la calidad de sus consultas, lo que directamente impacta en la sostenibilidad de la plataforma.</p>
+        <p><strong>What:</strong> Desarrollar un dashboard de impacto que muestre métricas agregadas y anónimas sobre: casos resueltos exitosamente, mejoras en indicadores de salud comunitaria, y reconocimientos de la comunidad.</p>
+        <p><strong>Hypothesis:</strong> Si proporcionamos a los profesionales voluntarios retroalimentación visual sobre el impacto positivo de sus consultas, entonces aumentará su participación activa en un 40% y mejorará la calidad de atención en un 30%.</p>
+      </div>
+      <div class="card">
+        <h4>Experiment Card 2</h4>
+        <p><strong>Question:</strong> ¿Qué algoritmo de triaje inteligente puede optimizar la asignación de consultas según la urgencia médica y la especialidad del profesional disponible?</p>
+        <p><strong>Why:</strong> La asignación manual actual puede generar demoras en casos urgentes y desaprovechamiento de la experticia especializada de los profesionales voluntarios.</p>
+        <p><strong>What:</strong> Implementar un sistema de triaje automático que clasifique consultas por urgencia (baja, media, alta) basado en síntomas reportados y derive automáticamente a especialistas según área de expertise.</p>
+        <p><strong>Hypothesis:</strong> Si implementamos un sistema de triaje inteligente que priorice y asigne consultas automáticamente, entonces reduciremos el tiempo de espera para casos urgentes en un 50% y aumentaremos la satisfacción del paciente en un 35%.</p>
+      </div>
+      <div class="card">
+        <h4>Experiment Card 3</h4>
+        <p><strong>Question:</strong> ¿Cómo podemos desarrollar un sistema de recordatorios automáticos personalizados que mejore la adherencia de las familias rurales a los tratamientos preventivos?</p>
+        <p><strong>Why:</strong> Las familias rurales frecuentemente olvidan seguimientos médicos y tratamientos preventivos debido a la falta de recordatorios estructurados, lo que reduce la efectividad de las consultas virtuales.</p>
+        <p><strong>What:</strong> Crear un sistema de recordatorios automáticos que, basado en el historial médico familiar, genere alertas personalizadas para controles preventivos, medicamentos y citas de seguimiento.</p>
+        <p><strong>Hypothesis:</strong> Si implementamos recordatorios automáticos personalizados basados en el historial de salud familiar, entonces aumentaremos la adherencia a tratamientos preventivos en un 60% y reduciremos las reconsultas por la misma condición en un 40%.</p>
+      </div>
+    </section>
+    <section class="pregunta">
+      <h2>Pregunta 3: Null & Alternative Hypotheses Statements</h2>
+      <div class="card">
+        <h4>Hypothesis 1</h4>
+        <p><strong>Alternative Hypothesis:</strong> La implementación del dashboard de impacto aumentará la participación activa de los profesionales voluntarios en un 40% y mejorará la calidad de atención en un 30%.</p>
+        <p><strong>Null Hypothesis:</strong> La implementación del dashboard de impacto no tendrá efecto significativo en la participación activa de los profesionales voluntarios ni en la calidad de atención proporcionada.</p>
+      </div>
+      <div class="card">
+        <h4>Hypothesis 2</h4>
+        <p><strong>Alternative Hypothesis:</strong> El sistema de triaje inteligente reducirá el tiempo de espera para casos urgentes en un 50% y aumentará la satisfacción del paciente en un 35%.</p>
+        <p><strong>Null Hypothesis:</strong> El sistema de triaje inteligente no producirá una reducción significativa en el tiempo de espera para casos urgentes ni aumentará la satisfacción del paciente.</p>
+      </div>
+    </section>
+    <section class="pregunta">
+      <h2>Pregunta 4: Métricas y metas para indicadores cualitativos y cuantitativos</h2>
+      <div class="card">
+        <h4>Question 1: Sistema de retroalimentación para profesionales</h4>
+        <ul>
+          <li><strong>Métricas:</strong>
+            <ul>
+              <li>Tasa de participación activa de profesionales voluntarios (cuantitativa)</li>
+              <li>Índice de calidad de consultas basado en satisfacción del paciente (cualitativa)</li>
+              <li>Tiempo promedio de dedicación por consulta (cuantitativa)</li>
+            </ul>
+          </li>
+          <li><strong>Metas:</strong>
+            <ul>
+              <li>Aumentar la participación activa de 60% a 84% (40% de incremento)</li>
+              <li>Mejorar el índice de calidad de 7.0 a 9.1 en escala de 10 puntos (30% de mejora)</li>
+              <li>Incrementar el tiempo promedio de consulta de 15 a 20 minutos (33% de incremento)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Question 2: Sistema de triaje inteligente</h4>
+        <ul>
+          <li><strong>Métricas:</strong>
+            <ul>
+              <li>Tiempo promedio de espera para casos urgentes (cuantitativa)</li>
+              <li>Índice de satisfacción del paciente post-consulta (cualitativa)</li>
+              <li>Porcentaje de derivaciones correctas por especialidad (cuantitativa)</li>
+            </ul>
+          </li>
+          <li><strong>Metas:</strong>
+            <ul>
+              <li>Reducir tiempo de espera para casos urgentes de 4 horas a 2 horas (50% de reducción)</li>
+              <li>Aumentar satisfacción del paciente de 6.5 a 8.8 en escala de 10 puntos (35% de mejora)</li>
+              <li>Alcanzar 90% de precisión en derivaciones por especialidad (desde 65% actual)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="pregunta">
+      <h2>Pregunta 5: To-Be Sprint Backlog</h2>
+      <div class="card">
+        <h4>User Story 1</h4>
+        <p><strong>User Story ID:</strong> US-001</p>
+        <p><strong>Epic ID:</strong> EP-001-ImpactDashboard</p>
+        <p><strong>Title:</strong> Dashboard de Impacto para Profesionales Voluntarios</p>
+        <p><strong>Description:</strong> Como profesional de la salud voluntario, quiero visualizar el impacto de mis consultas en la comunidad rural para mantener mi motivación y mejorar la calidad de mi atención.</p>
+        <p><strong>Acceptance Criteria:</strong></p>
+        <ul>
+          <li>El dashboard muestra métricas agregadas de casos atendidos exitosamente</li>
+          <li>Se visualizan indicadores de mejora en salud comunitaria relacionados con mis consultas</li>
+          <li>Incluye reconocimientos y feedback anónimo de la comunidad</li>
+          <li>Los datos se actualizan semanalmente</li>
+          <li>La interfaz es intuitiva y accesible desde dispositivos móviles</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>User Story 2</h4>
+        <p><strong>User Story ID:</strong> US-002</p>
+        <p><strong>Epic ID:</strong> EP-002-IntelligentTriage</p>
+        <p><strong>Title:</strong> Sistema de Triaje Inteligente para Asignación de Consultas</p>
+        <p><strong>Description:</strong> Como centro comunitario, quiero que las consultas se asignen automáticamente según urgencia y especialidad para optimizar la atención médica y reducir tiempos de espera.</p>
+        <p><strong>Acceptance Criteria:</strong></p>
+        <ul>
+          <li>El sistema clasifica consultas en 3 niveles de urgencia (baja, media, alta)</li>
+          <li>Se asignan automáticamente a profesionales según especialidad y disponibilidad</li>
+          <li>Los casos urgentes se priorizan independientemente del horario programado</li>
+          <li>Se genera notificación inmediata para casos de alta urgencia</li>
+          <li>Incluye métricas de efectividad del algoritmo de asignación</li>
+        </ul>
+      </div>
+    </section>
+    <section class="pregunta">
+      <h2>Pregunta 6: Feature & scenarios</h2>
+      <div class="card">
+        <h4>Feature: Sistema de Triaje Inteligente</h4>
+        <pre class="gherkin">
+Feature: Sistema de Triaje Inteligente para Asignación de Consultas
+  Como centro comunitario
+  Quiero que las consultas se asignen automáticamente según urgencia y especialidad
+  Para optimizar la atención médica y reducir tiempos de espera
+
+  Scenario: Asignación automática exitosa de consulta urgente (Happy Path)
+    Given que existe un profesional cardiólogo disponible
+    And hay una consulta nueva con síntomas de dolor en el pecho
+    When el sistema evalúa la consulta
+    Then la consulta se clasifica como "urgencia alta"
+    And se asigna automáticamente al cardiólogo disponible
+    And se envía notificación inmediata al profesional
+    And se registra el tiempo de asignación como menor a 5 minutos
+
+  Scenario: No hay especialista disponible para consulta urgente (Unhappy Path)
+    Given que no hay cardiólogo disponible
+    And hay una consulta nueva con síntomas de dolor en el pecho
+    When el sistema evalúa la consulta
+    Then la consulta se clasifica como "urgencia alta"
+    And se asigna al médico general disponible más cercano
+    And se envía alerta al centro comunitario sobre la necesidad de especialista
+    And se registra como "derivación de emergencia"
+
+  Scenario: Consulta rutinaria con múltiples especialistas disponibles (Alternative Path)
+    Given que hay 3 médicos generales disponibles
+    And hay una consulta nueva para control preventivo
+    When el sistema evalúa la consulta
+    Then la consulta se clasifica como "urgencia baja"
+    And se asigna al médico con menor carga de trabajo
+    And se programa para el próximo horario disponible del médico
+    And se confirma la asignación al paciente
+
+  Examples:
+    | Síntomas | Urgencia | Especialidad_Requerida | Tiempo_Asignación |
+    | dolor_pecho | alta | cardiología | <5_minutos |
+    | fiebre_común | media | medicina_general | <30_minutos |
+    | control_rutinario | baja | medicina_general | <2_horas |
+        </pre>
+      </div>
+    </section>
+  </main>
+  <script src="examen_final_upc.js"></script>
+</body>
+</html> 

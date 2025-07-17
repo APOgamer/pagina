@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #a51c30;
+  margin: 0;
+  padding: 0;
+}
+.upc-header {
+  display: flex;
+  align-items: center;
+  background: #a51c30;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.upc-logo {
+  height: 70px;
+  margin-right: 2rem;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.upc-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+.upc-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(165,28,48,0.08);
+}
+.info {
+  background: #fbeaec;
+  border-left: 6px solid #a51c30;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.pregunta {
+  margin-bottom: 2.5rem;
+}
+.pregunta h2 {
+  color: #a51c30;
+  border-bottom: 2px solid #a51c30;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
+}
+.card {
+  background: #fff6f7;
+  border: 1.5px solid #a51c30;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(165,28,48,0.04);
+}
+.card h4 {
+  margin-top: 0;
+  color: #a51c30;
+}
+.gherkin {
+  background: #fbeaec;
+  color: #a51c30;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+}
+@media (max-width: 600px) {
+  .upc-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .upc-logo {
+    margin-bottom: 1rem;
+    height: 50px;
+  }
+  main {
+    padding: 1rem;
+  }
+  .info {
+    padding: 1rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+} 
